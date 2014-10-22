@@ -13,7 +13,7 @@ $(document).on("pageinit", "#index", function() {
             success: function(results) {
                 console.log(results);
                 if(results && results.length>0){
-                    document.getElementById('target').innerHTML = "id:" +results[0].id +"<br/>createAt:" + results[0].createdAt + "<br/>updateAt:" + results[0].updatedAt;
+                    document.getElementById('target').innerHTML = "id:" +results[0].attributes.status +"<br/>createAt:" + results[0].createdAt + "<br/>updateAt:" + results[0].updatedAt;
 
                 }
             },
