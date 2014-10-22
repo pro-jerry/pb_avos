@@ -6,7 +6,6 @@
 	<title>亲子银行</title>
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.4.min.css">
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="shortcut icon" href="favicon.ico">
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.4.min.js"></script>
 	<script src="js/index.js"></script>
@@ -14,7 +13,6 @@
 	<style>
 		
 	</style>
-</head>
 </head>
 <body>
 <div data-role="page" id="index">
@@ -28,11 +26,11 @@
 		<form action="#" method="post" data-transition="pop">
 			<ul data-role="listview" data-inset="true">
 				<li class="ui-field-contain">
-					<label for="name3">用户名:</label>
+					<label for="userName">用户名:</label>
 					<input type="text" name="bankOwner.userName" id="userName" data-clear-btn="true">
 				</li>
 				<li class="ui-field-contain">
-					<label for="name3">密码:</label>
+					<label for="password">密码:</label>
 					<input type="password" name="bankOwner.password" id="password"  data-clear-btn="true">
 				</li>
 				<li class="ui-field-contain">
@@ -54,16 +52,12 @@
 				<li><a href="#">Menu item 3</a></li>
 			</ul>
 		</div> -->
-		<div id="target">
-		</div>
-
+        <div id="target"></div>
 	</div>
 
 	
 
 </div><!-- /page -->
-<div id="target"></div>
-    
     <script>
         AV.initialize("nt9nujwnc0vp7g1htejarpovprpsy6inrrr2ixeobaozy0xe", "k9beb8y6876zbhp5cgk4p83swuri1y2gc10f8y1tml07haam");
         var Test = AV.Object.extend('test');
