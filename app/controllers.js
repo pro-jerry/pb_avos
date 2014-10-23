@@ -3,6 +3,9 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('LoginCtrl', [function() {
+    controller('LoginCtrl', [function () {
 
-  }]);
+    }])
+    .controller('RegisterCtrl', [function () {
+
+    }]);
