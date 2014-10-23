@@ -1,8 +1,8 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      <section class="left">
+        <a  href="#"><span>&nbsp;&nbsp;<</span></a>
       </section>
 
       <section class="middle tab-bar-section">
@@ -10,7 +10,7 @@
       </section>
 
       <div class="right">
-        <a class="" href="#/login"><span>登陆</span></a>
+        <a  href="#/login"><span>登陆&nbsp;&nbsp;</span></a>
       </div>
     </nav>
 
@@ -22,20 +22,20 @@
         <div class="row">
           <div class="large-12 columns">
             <label>用户名
-              <input type="text" placeholder="请输入用户名" />
+              <input ng-model="user.username" type="text" placeholder="请输入用户名" />
             </label>
           </div>
         </div>
         <div class="row">
           <div class="large-12 columns">
             <label>密码
-              <input type="text" placeholder="请输入密码" />
+              <input ng-model="user.password" type="text" placeholder="请输入密码" />
             </label>
           </div>
         </div>
         <div class="row">
           <div class="large-12 columns">
-            <a href="#" class="button expand">注册</a>
+            <a href="" class="button expand" ng-click="register()">注册</a>
           </div>
         </div>
       </form>
