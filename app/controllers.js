@@ -6,10 +6,10 @@ angular.module('myApp.controllers', []).
     controller('LoginCtrl', [function () {
 
     }])
-    .controller('RegisterCtrl', [function ($scope) {
-
+    .controller('RegisterCtrl', ['$scope',function ($scope) {
       $scope.register = function(){
         var data = $scope.user;
+
         //....
       };
 
