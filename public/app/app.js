@@ -7,6 +7,6 @@ var myApp = angular.module('myApp', ['ngRoute', 'ionic', 'myApp.filters', 'myApp
     }])
     .run(function ($rootScope) {
       $rootScope.$on('$viewContentLoaded', function () {
-        AV.initialize("nt9nujwnc0vp7g1htejarpovprpsy6inrrr2ixeobaozy0xe", "k9beb8y6876zbhp5cgk4p83swuri1y2gc10f8y1tml07haam");
+
       });
     });
