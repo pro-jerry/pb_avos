@@ -1,18 +1,18 @@
 <div class="bar bar-header bar-positive">
   <button class="button button-icon icon ion-chevron-left"></button>
-  <div class="h1 title">注册亲子银行账号</div>
-  <a href="#/login" class="button">登陆</a>
+  <div class="h1 title">注册</div>
+  <a href="#/login" class="button button-clear">登陆</a>
 </div>
 <div class="content has-header">
   <div class="list list-inset">
     <label class="item item-input">
-      <input type="text" placeholder="用户名">
+      <input ng-model="user.username" type="text" placeholder="请输入用户名">
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="密码">
+      <input ng-model="user.password" type="text" placeholder="请输入密码">
     </label>
   </div>
   <div class="padding">
-    <button class="button button-block button-positive" href="#/login">注册</button>
+    <button class="button button-block button-positive" ng-click="register()">提交</button>
   </div>
 </div>
