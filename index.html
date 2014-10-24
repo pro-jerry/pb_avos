@@ -1,63 +1,35 @@
-<html>
+<html lang="en">
 <head>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>亲子银行</title>
-	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.4.min.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.4.4.min.js"></script>
-	<script src="js/index.js"></script>
-	<script type="text/javascript" src="avos/av-mini.js"></script>
-	<style>
-		
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>亲子银行</title>
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="vendor/ionic-v1.0.0-beta.13/css/ionic.min.css">
+  <!-- Application CSS -->
+  <link href="app/css/app.css" rel="stylesheet"/>
 </head>
-<body>
-<div data-role="page" id="index">
-  <div data-role="header">
-    <h1>亲子银行</h1>
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
-    <a href="regist.html" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear">登陆注册</a>
-  </div><!-- /header -->
-  <div class="ui-content" role="main">
-    <p>欢迎登陆亲子银行:</p>
-    <form action="#" method="post" data-transition="pop">
-      <ul data-role="listview" data-inset="true">
-        <li class="ui-field-contain">
-          <label for="userName">用户名:</label>
-          <input type="text" name="bankOwner.userName" id="userName" data-clear-btn="true">
-        </li>
-        <li class="ui-field-contain">
-          <label for="password">密码:</label>
-          <input type="password" name="bankOwner.password" id="password"  data-clear-btn="true">
-        </li>
-        <li class="ui-field-contain">
-          <input type="button" name="toLogin" id="toLogin" value="登陆">
-        </li>
-        <li>${errorMessage }</li>
-      </ul>
-    </form>
+<body ng-app="myApp">
+<div ng-view></div>
 
+<!-- jquery -->
+<script src="vendor/jquery/jquery.js"></script>
 
+<!-- AngularJS  -->
+<!--<script src="vendor/angular-1.3.0/angular.min.js"></script>-->
+<!--<script src="vendor/angular-1.3.0/angular-route.min.js"></script>-->
 
-  </div><!-- /content -->
+<!-- ionic  -->
+<script src="vendor/ionic-v1.0.0-beta.13/js/ionic.bundle.min.js"></script>
+<script src="vendor/ionic-v1.0.0-beta.13/js/angular/angular-route.min.js"></script>
+<!--<script src="vendor/ionic-v1.0.0-beta.13/js/ionic.js"></script>-->
 
-  <div data-role="footer" data-position="fixed">
-    <!-- 	<div data-role="navbar">
-        <ul>
-          <li><a href="#">Menu item 1</a></li>
-          <li><a href="#" class="ui-btn-active ui-state-persist">Menu item 2</a></li>
-          <li><a href="#">Menu item 3</a></li>
-        </ul>
-      </div> -->
-    <div id="target"></div>
-  </div>
+<script src="avos/av-mini.js"></script>
 
-	
-
-</div><!-- /page -->
-
+<!-- AngularJS app files -->
+<script src="app/app.js"></script>
+<script src="app/services.js"></script>
+<script src="app/controllers.js"></script>
+<script src="app/filters.js"></script>
+<script src="app/directives.js"></script>
 </body>
 </html>
