@@ -1,18 +1,21 @@
 <div class="bar bar-header bar-positive">
   <button class="button button-icon icon ion-chevron-left"></button>
-  <div class="h1 title">注册</div>
+  <div class="h1 title"><b>开设银行-账户登记</b></div>
   <a href="#/login" class="button button-clear">登陆</a>
 </div>
 <div class="content has-header">
   <div class="list list-inset">
     <label class="item item-input">
-      <input ng-model="user.username" type="text" placeholder="请输入用户名">
+      <input ng-model="user.nickName" type="text" placeholder="输入您的昵称">
     </label>
     <label class="item item-input">
-      <input ng-model="user.password" type="text" placeholder="请输入密码">
+      <input ng-model="user.email" type="text" placeholder="输入您的邮箱">
+    </label>
+    <label class="item item-input">
+      <input ng-model="user.password" type="password" placeholder="输入您的密码">
     </label>
   </div>
   <div class="padding">
-    <button class="button button-block button-positive" ng-click="register()">提交</button>
+    <button class="button button-block button-positive" ng-click="register()">马上开始属于您的银行</button>
   </div>
 </div>
